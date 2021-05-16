@@ -36,3 +36,6 @@ aws --version
 - variables.tf --> All used variables defined
 - rds.tf --> Relational database and subnet for teh same 
 - web.tf --> keypair, EC2 instance for web and autoscaling group
+- iam.tf --> Defining IAM, Bucket policy and Enabling Logs
+
+
