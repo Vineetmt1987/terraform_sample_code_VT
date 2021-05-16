@@ -1,0 +1,19 @@
+#Enable traffic to webserver instances :
+
+resource "aws_security_group" "default" {
+  name        = "terraform_security_group"
+  description = "Terraform example security group"
+  vpc_id      = "${aws_vpc.vpc.id}"
+
+  # Allow outbound internet access.
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  tags {
+    Name = "terraform-example-security-group"
+  }
+}
