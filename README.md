@@ -30,9 +30,9 @@ aws --version
 
 ## File reference :
 
-> project.tf --> vpc and subnet for vpc private and pbulic both
-> datasource.tf --> data avaiablity zone and route 53
-> user.tfvars --> allowed cider blcoks with user's password
-> variables.tf --> All used variables defined
-> rds.tf --> Relational database and subnet for teh same 
-> web.tf --> keypair, EC2 instance for web and autoscaling group
+- project.tf --> vpc and subnet for vpc private and pbulic both
+- datasource.tf --> data avaiablity zone and route 53
+- user.tfvars --> allowed cider blcoks with user's password
+- variables.tf --> All used variables defined
+- rds.tf --> Relational database and subnet for teh same 
+- web.tf --> keypair, EC2 instance for web and autoscaling group
