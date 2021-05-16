@@ -1,3 +1,4 @@
+# Create AWS Subnet
 resource "aws_subnet" "rds" {
   count                   = "${length(data.aws_availability_zones.available.names)}"
   vpc_id                  = "${aws_vpc.vpc.id}"

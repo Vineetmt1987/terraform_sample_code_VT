@@ -1,5 +1,5 @@
 #Need to define password for DB user for testing I have used test user
-database_password = "1234"
+database_password = " "
 
 # for allowed cidr blocks define ingress rule
  ingress {
